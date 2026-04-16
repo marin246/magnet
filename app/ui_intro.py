@@ -361,7 +361,7 @@ def ui_intro(m):
         # loss_test_list.index = [''] * len(loss_test_list) # hide index
         loss_test_list.index = range(1, len(loss_test_list) + 1) # re-index from 1 to 10
         
-        st.dataframe(data=loss_test_list, use_container_width=True)
+        st.dataframe(data=loss_test_list, width='stretch')
     
     
     st.markdown("""---""")
