@@ -351,10 +351,10 @@ def ui_intro(m):
             hdata_test = BH_Transformer(material_test, freq, temp, bias, bdata)
             loss_test = loss_BH(bdata, hdata_test, freq)
             this_one = '   ✓' if (material_test==material) else ''
-            loss_test_list = loss_test_list.append({
+            loss_test_list = pd.concat([loss_test_list, {
                 'Material':material_test,
                 'Core Loss [kW/m^3]': np.round(loss_test / 1e3, 2),
-                'This one': this_one}, ignore_index=True)
+                'This one': this_one}], ignore_index=True)
         
         loss_test_list=loss_test_list.sort_values(by='Core Loss [kW/m^3]')
         
