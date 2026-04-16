@@ -16,7 +16,7 @@ dependencies = [
     "json5>=0.9.5,<1.0",
     "numpy>=1.22.0,<2.0",
     "pandas>=1.2.4,<2.0",
-    "plotly>=4.14.3,<5.0",
+    "plotly>=4.14.3,<6.0",
     "setuptools",
     "scipy>=1.7.1,<2.0",
     "streamlit>=1.1.0,<2.0",
